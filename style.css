@@ -1,0 +1,36 @@
+
+.forecastItems{
+    border: black solid 2px;
+    background: darkblue;
+    list-style: none;
+    color: white;
+    margin: 50px 5px;
+}
+
+.header{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.search{
+    position: relative;
+    padding-top: 10px;
+    margin-top: 20px;
+    border: 1px grey solid;
+    height: 50vh;
+    width: 30vw;
+}
+
+.weatherBoard{
+    border: black 2px solid;
+    margin-top: 20px;
+}
+
+#title{
+    margin-top: 20px;
+}
+
+ul>li{
+   list-style: none; 
+}
