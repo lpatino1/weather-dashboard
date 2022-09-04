@@ -1,0 +1,23 @@
+{
+  "name": "weather-dashboard",
+  "version": "1.0.0",
+  "description": "With this weather dashboard you are able to search for a city's current weather and a five day forecast. I used the open weather api.\r ## Installation\r No installation is needed. However, if you want to clone the repo onto your device you will need your own api key for the open weather api.\r ## Usage\r Free to use.\r ## Images",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lpatino1/weather-dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lpatino1/weather-dashboard/issues"
+  },
+  "homepage": "https://github.com/lpatino1/weather-dashboard#readme",
+  "dependencies": {
+    "moment": "^2.29.4"
+  }
+}

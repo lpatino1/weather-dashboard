@@ -1,3 +1,4 @@
+
 //global var
 var lat ='';
 var lon ='';
@@ -82,10 +83,14 @@ function getWeather(lat, lon, result){
         iconImg.src=icon;
         IconEl.src=icon;
 
+        //date display
+        let datePlaceholder=`${data.current.dt}`
+        let dateTimeString = moment.unix(datePlaceholder).format("DD-MM-YYYY");
+       
 
         //edits the innherHTML of front end elements to display weather conditions of searched city
         descriptionEL.innerHTML  = `${data.current.weather[0].description}`;
-        currentDateEl.innerHTML =`${data.current.dt}`;
+        currentDateEl.innerHTML = dateTimeString;
         currentWeatherEl.innerHTML =`Description: ${data.current.weather[0].main}`;
         cityHeaderEl.innerHTML=`${result}`;
         tempEl.innerHTML  = `Temp: ${data.current.temp}`;
@@ -114,8 +119,11 @@ function getWeather(lat, lon, result){
         removeCards();
 
         for(i=0; i<5;i++){
-            //grab html element
-           
+
+
+            datePlaceholder= `${data.daily[i].dt}`;
+            dateTimeString = moment.unix(datePlaceholder).format("DD-MM-YYYY");
+
             placeholder=`${data.daily[i].weather[0].icon}`
 
             
@@ -130,7 +138,7 @@ function getWeather(lat, lon, result){
             dailyCards.appendChild(dailyIcon);
             
             var h4El =document.createElement('h4');
-            h4El.textContent=`${data.daily[i].dt}`;
+            h4El.textContent= dateTimeString;
             dailyCards.appendChild(h4El);
 
             var dailyItemEl=document.createElement('ul');
