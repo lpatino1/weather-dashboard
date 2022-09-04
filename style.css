@@ -1,9 +1,9 @@
 
 .forecastItems{
     border: black solid 2px;
-    background: darkblue;
+    background: lightblue;
     list-style: none;
-    color: white;
+    color: black;
     margin: 50px 5px;
 }
 
@@ -25,6 +25,7 @@
 .boardStyle{
     border: black 2px solid;
     margin-top: 20px;
+    background-color: lightblue;
 }
 
 #title{
@@ -33,4 +34,5 @@
 
 ul>li{
    list-style: none; 
+   margin-top: 2px;
 }
